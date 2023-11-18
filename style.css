@@ -183,6 +183,7 @@
   background: linear-gradient(315deg, #00ccff, #d400d4);
   transition: 0.5s;
   animation: animate 4s linear infinite;
+  overflow: hidden;
   
 }
 
@@ -208,6 +209,7 @@ inset: -20px 0px;
   background: #162052;
   border-radius: 50%;
   z-index: 50%;
+  overflow: hidden;
 }
 
 .contentJu {
@@ -231,6 +233,7 @@ inset: -20px 0px;
   object-fit: cover;
   transition: 0.5s;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .boxProfile:hover .contentJu img{
