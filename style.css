@@ -1,4 +1,28 @@
 /* Define the blue color palette */
+
+
+
+/* Style the scrollbar */
+:-webkit-scrollbar {
+  width: 0.5px; /* Adjust as needed */
+  
+}
+
+:-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color of the thumb */
+   /* Roundness of the thumb */
+}
+
+:-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the track */
+}
+
+
+
+
+
+
+
 :root {
     --blue-1: #0d1b2a;
     --blue-2: #1b263b;
@@ -17,25 +41,26 @@
   }
   /* Use the blue color palette */
   body {
-    margin:auto;
-    width: 50%;
-    padding: 30px;
+    width: 100%;
     background-color: var(--blue-1);
     color: var(--blue-5);
-    text-align: center;
+    position: absolute;
+    margin: none;
   }
   
   h1, h2, h3, h4, h5, h6 {
     color: var(--blue-3);
     text-align: center;
-    
+    position: relative;
     
   }
 
 
   h1 {
-    margin: auto;
+   
     width: 70%;
+    padding-right: 15%;
+    padding-left: 15%;
     text-align: center;
   }
   a {
@@ -58,7 +83,7 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    position: absolute;
+   
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -72,6 +97,16 @@
     font-size: 1rem;
   }
 
+  #myBtn {
+    background-color: var(--blue-1);
+    color: var(--blue-5);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
   p {
     text-align: center;
   }
@@ -82,7 +117,8 @@
     font-size: 1.5rem;
   }
   img {
-    border: solid  var(--blue-4);
+    border: 4.5px solid  var(--blue-4);
+    position: relative;
   }
 
 
@@ -90,8 +126,9 @@
   #about {
     position: absolute;
     top: 4%;
-    left: 12%;
+    left: 4%;
     padding: 2%;
+    z-index: 30;
     border: solid  var(--blue-5);
     font-style: normal;
     font-size: 1rem;
@@ -104,12 +141,10 @@
 
   #about:hover {
     border: solid  var(--blue-4);
-
+    position: absolute;
   }
 
-  #needspadding {
-    padding: 5%;
-  }
+
 
 
 
@@ -129,7 +164,7 @@
     top:0%;
     background-color:var(--blue-3);
     position:fixed!important;
-    z-index:1;
+    z-index:32;
     overflow:none !important;
     text-align: left !important;
   }
@@ -138,7 +173,7 @@
   border-top: 3px solid var(--blue-1);
   left: 5%;
   width: 90%;
-  
+  position: absolute;
 }
 
 #droplist {
@@ -147,33 +182,24 @@
   color: var(--blue-1);
   left: 0%;
   max-width: 85%;
-  margin-right: 50%;
+  z-index: 32;
 }
 
 
 
 
 
-#JacksonBackgroundAbt {
-  width: 100%;
-  height: 1550px;
-  position: absolute;
-  left: 0%;
-  background-color: black;
-  justify-content: center;  
-  display: flex;
-  align-items: center;
-  z-index: 10;
-}
 
 
 .boxProfile {
-  position: relative;
+  position: absolute;
   width: 400px;
   height: 400px;
   background: var(--blue-1);
-  border-radius: 50%;
+  border-radius: 200px;
   overflow: hidden;
+  margin-right: 60%;
+  margin-left: 3%;
 }
 
 .boxProfile::before {
@@ -205,16 +231,15 @@ inset: -20px 0px;
   content: '';
   position: absolute;
   inset: 6px;
-  background: #162052;
-  border-radius: 50%;
-  z-index: 50%;
+  background: var(--blue-1);
+  border-radius: 200px;
   overflow: hidden;
 }
 
 .contentJu {
   position: absolute;
   inset: 30px;
-  border: 6px solid #070a1c;
+  border: 6px solid #84af15;
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
@@ -233,18 +258,18 @@ inset: -20px 0px;
   transition: 0.5s;
   pointer-events: none;
   overflow: hidden;
+  z-index: 3;
 }
+
 
 .boxProfile:hover .contentJu img{
   opacity: 0;
 }
 
 #JuFaceProfile{
-  height: 95%;
   position: absolute;
   scale: 1vh;
-  width: vw;
-  padding: 10%;
+
   
  
 }
@@ -254,6 +279,7 @@ inset: -20px 0px;
   padding: 5%;
   font-size: 3.9vh;
   overflow: hidden;
+  
 }
 
 #linewide {
@@ -270,8 +296,166 @@ inset: -20px 0px;
   left: 0%;
   bottom: -1%;
 }
-#more {
-  display: none;
-  padding: 2%;
+#more, #dots {
   font-size: 2.9vh;
+}
+
+
+#blackbgStartAbt {
+  background-color: var(--blue-1);
+  height: 700px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+
+#imgNeedMargin {
+  margin-left: 15%;
+  margin-right: 14%;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+#JuFaceProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.boxProfile {
+  flex: 0 0 auto; /* Set the boxProfile to not grow or shrink */
+}
+
+.contentJu {
+  flex: 1; /* Allow contentJu to grow and take available space */
+  text-align: right;
+}
+
+/* Optional: Adjust the image size */
+.contentJu img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Add some margin or padding for better spacing */
+#blackbgStartAbt {
+  max-width: 100vw
+}
+
+
+#textbox {
+    background-color: var(--blue-2);
+    color: linear-gradient(#00ccff, #d400d4);
+    margin-top: 5%;
+    display: inline-block;
+    width: 100vw;
+    padding-right: 20%;
+    padding-left: 40%;
+    border-top: 3px solid var(--blue-4);
+    border-bottom:3px solid var(--blue-4);
+    
+
+}
+
+
+/* Your regular styles go here */
+
+/* Media query for screens with a width of 600 pixels or less */
+@media (max-width: 1100px) {
+  /* Adjust styles for smaller screens */
+  /* For example, you can set a different width or display property for elements */
+  #textbox {
+    background-color: var(--blue-4);
+    color: var(--blue-2);
+    margin-top: 360px;
+    display: inline-block;
+    max-width: 100vw;
+    padding-right: 25%;
+    padding-left: 25%;
+    max-height: 700px;
+    overflow: scroll;
+    
+    
+}
+
+.boxProfile {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: var(--blue-1);
+  border-radius: 175px;
+  overflow: hidden;
+  margin-left: calc((100vw - 350px) * 0.5);
+  margin-right: calc((100vw - 350px) * 0.5);
+  top: 5px;
+  margin-bottom: 15px;
+
+}
+  #blackbgStartAbt {
+    margin-bottom: 360px;
+  }
+
+  .contentJu {
+    flex: 1; /* Allow contentJu to grow and take available space */
+    text-align: right;
+    font-size: 2.2vh;
+  }
+
+  .scroll-down {
+    top: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0.7;
+    animation: fadeInUp 2s ease-in-out infinite;
+    display: block !important;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0.7;
+      transform: translate(0%, 20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(0%, 0);
+    }
+    100% {
+      opacity: 0.7;
+      transform: translate(0%, 20px);
+    }
+  }
+  #notcool {
+    margin-right: 60%;
+    margin-left: 3%;
+    top: 250px !important;
+    z-index: 4;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3vh;
+  }
+}
+
+
+.scroll-down {
+  opacity: 0;
+  display: none;
+}
+
+
+#notcool {
+  margin-right: 60%;
+  margin-left: 3%;
+  top: 410px;
+  z-index: 4;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.3vh;
 }
