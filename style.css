@@ -346,9 +346,8 @@ body {
 
 #textbox {
     background-color: var(--blue-1);
-    color: linear-gradient(#00ccff, #d400d4);
     margin-top: 5%;
-    display: inline-block;
+    display: block;
     width: 100%;
     padding-right: 20%;
     padding-left: 40%;
@@ -365,16 +364,18 @@ body {
   /* Adjust styles for smaller screens */
   /* For example, you can set a different width or display property for elements */
   #textbox {
-    background-color: var(--blue-4);
+    background-color: var(--blue-1);
     color: var(--blue-2);
     margin-top: 360px;
-    display: inline-block;
-    max-width: 100vw;
-    padding-right: 25%;
-    padding-left: 25%;
+    max-width: 100%;
     max-height: 700px;
     overflow-x: hidden;
     overflow-y: scroll;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: right;
+    
+    
     
     
 }
@@ -401,30 +402,8 @@ body {
     text-align: right;
     font-size: 2.2vh;
   }
-
-  .scroll-down {
-    top: 20px;
-    transform: translateX(-50%);
-    text-align: center;
-    opacity: 0.7;
-    animation: fadeInUp 2s ease-in-out infinite;
-    display: block !important;
-  }
   
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0.7;
-      transform: translate(0%, 20px);
-    }
-    50% {
-      opacity: 1;
-      transform: translate(0%, 0);
-    }
-    100% {
-      opacity: 0.7;
-      transform: translate(0%, 20px);
-    }
-  }
+
   #notcool {
     margin-right: 60%;
     margin-left: 3%;
