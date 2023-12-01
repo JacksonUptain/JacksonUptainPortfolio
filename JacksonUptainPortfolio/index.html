@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+   
 </head>
 <!--IDK bout this-->
 
@@ -35,18 +36,14 @@
                         <h2><span id="hideMe">Javascript/Bash/Python/Etc</span></h2>
                     </div>
                 </div>   
-                <div id="notcool" ><h1 style="line-height: 37px; color: var(--blue-3)">Jackson Uptain</h1></div>
+                <div id="notcool" ><h1 id="JackName">Jackson Uptain</h1></div>
                 <div id="textbox">
-                    <div class="scroll-down">Scroll Down</div>
-                    <p style="font-family: 'Oswald', sans-serif;  font-size: 1.6rem;color: var(--blue-3)">I've been coding for around a year and a half and enjoy experimenting with several programming languages.</p>
-                    <br>
-                    <p style="font-family: 'Oswald', sans-serif;  font-size: 1.6rem;color: var(--blue-3)">I have no professional experience, but I have created a list of real-world type projects in a relatively short period of time.</p>
-                    <br>
-                    <p style="font-family: 'Oswald', sans-serif;  font-size: 1.6rem;color: var(--blue-3)">I am currently working on my Front-end Certification from Codecademy, but I'd like to be full-stack. My skills are quite a range, consisting of: Javascript, HTML, Bash, Python, and Swift.</p>
-                    <br>
-                    <p style="font-family: 'Oswald', sans-serif;  font-size: 1.6rem;color: var(--blue-3)">I am always looking for projects to work on, and I enjoy working with other people.</p>
-                        
-                        
+                    <p style="font-family: 'Oswald', sans-serif;  font-size: 1.5rem;color: var(--blue-3);">
+                        I've been coding for around a year and a half and have enjoyed experimenting with several programming languages.
+                    <br>I have no professional experience, but I love to code and have built many websites and applications on my own. I have included a small list of some of those projects along with links below.</p><span id="dots3"></span><span id="more1" style="font-family: 'Oswald', sans-serif;  font-size: 1.5rem;color: var(--blue-3); background-color: var(--blue-1); opacity: 1;">
+                    <br>I am currently working on my front-end certification from Codecademy and plan to eventually do the full-stack certification. Some of my skills are: Javascript, HTML, Bash, Python, and Swift.
+                    <br>I am always looking for projects to work on, and I enjoy working with other people.</span> <a onclick="myFunction()" id="myBtn2">Read More</a></p>
+                    
                 </div>
             </div>
         </div>
@@ -56,7 +53,7 @@
     
         <div>
             <br>
-            <img src="DisneyPlusClone.png" alt="DisneyPlusClone" width="70%" id="imgNeedMargin">
+            <img src="DisneyPlusClone.png" alt="DisneyPlusClone" width="70%" id="imgNeedMargin" href="https://jacksonuptain.github.io/react-disney">
             <h2><a href="https://jacksonuptain.github.io/react-disney">React Disney+</a></h2>
             <p class="subheading">A small example of a clone of Disney Plus</p>
             <br>
@@ -72,7 +69,7 @@
         <br>
             <div>
                 <br>
-                <img src="WifiCayoteImg.jpg" alt="Wifi-Cayote" width="70%" id="imgNeedMargin">
+                <img src="WifiCayoteImg.jpg" alt="Wifi-Cayote" width="70%" id="imgNeedMargin" href="https://github.com/JacksonUptain/WifiCayote">
             <h2><a href="https://github.com/JacksonUptain/WifiCayote">Wifi Hacking Tool: Wifi-Cayote</a></h2>
             <p class="subheading">A tool that helps make a Wifi rickroll device. Written in Bash (Linux).</p>
                 <br>
@@ -87,7 +84,7 @@
         <br>
             <div>
                 <br>
-                <img src="3dportfolio.png" alt="3dportfolio" width="70%" id="imgNeedMargin">
+                <img src="3dportfolio.png" alt="3dportfolio" width="70%"  id="imgNeedMargin" href="https://jacksonuptain.github.io/Test-Portfolio2/">
                 <h2><a href="https://jacksonuptain.github.io/Test-Portfolio2/">3D Web Portfolio</a></h2>
                 <p class="subheading">My old/original web portfolio (not mobile friendly).</p>
                 <br>
@@ -102,7 +99,7 @@
         <br>
             <div>
                 <br>
-                <img src="Genesis.png" alt="GenesisPng" width="70%" id="imgNeedMargin">
+                <img src="Genesis.png" alt="GenesisPng" width="70%" id="imgNeedMargin" href="https://jacksonuptain.github.io/Parallax-Effect-FullCode-From-TrueCoderYT/3D-Parallax-Website-in-JavaScript-main/index.html">
                 <h2><a href="https://jacksonuptain.github.io/Parallax-Effect-FullCode-From-TrueCoderYT/3D-Parallax-Website-in-JavaScript-main/index.html">Parallax Website</a></h2>
                 <p class="subheading">An interactive website that is controlled using your mouse.</p>
                 <br>
@@ -125,23 +122,22 @@
                 <br>
     </section>
     <br>
-        <script>
-            function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
-            
-            if (dots.style.display === "none") {
-                dots.style.display = "block";
-                btnText.innerHTML = "Read more";
-                btnText.style.position = "absolute"; 
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
-                moreText.style.display = "block";
-            }
-            }
-            </script>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots3");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn2");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "block";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "block";
+          }
+        }
+        </script>
     </body>
 </html>

@@ -199,8 +199,8 @@
   background: var(--blue-1);
   border-radius: 200px;
   overflow: hidden;
-  margin-right: 60%;
-  margin-left: 3%;
+  left: 100px;
+  top: 100px;
 }
 
 .boxProfile::before {
@@ -240,7 +240,7 @@ inset: -20px 0px;
 .contentJu {
   position: absolute;
   inset: 30px;
-  border: 6px solid var(--blue-3);
+  border: 6px solid var(--blue-2);
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
@@ -269,7 +269,7 @@ inset: -20px 0px;
 
 #JuFaceProfile{
   position: absolute;
-  scale: 1vh;
+  
 
   
  
@@ -300,14 +300,16 @@ inset: -20px 0px;
   background-color: var(--blue-1);
   height: 700px;
   position: relative;
-  top: 0px;
-  left: 0px;
+  width: 100%;
 }
 
 
 #imgNeedMargin {
-  margin-left: 15%;
-  margin-right: 14%;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  width: 50vw;
+  overflow-y: hidden;
+  border: 3px solid var(--blue-4);
 }
 
 
@@ -338,45 +340,82 @@ body {
   height: auto;
 }
 
-
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Set the background color to transparent */
+}
 
 
 #textbox {
+    margin-left: 550px;
+    margin-right: 100px;
+    margin-top: 110px;
+    flex-direction: column;
+    text-align: center;
     background-color: var(--blue-1);
-    margin-top: 5%;
-    display: block;
-    width: 100%;
-    padding-right: 20%;
-    padding-left: 40%;
-   
-    
-
+    overflow: scroll;
+    height: 500px;
 }
 
+#hideMe {
+font-size: 1.3rem;
+}
+
+
+#myBtn2{
+  border: 2px solid var(--blue-4);
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  font-size: 1.2rem;
+  line-height: 50px;
+}
+
+#myBtn2:hover {
+  color: var(--blue-2);
+  border: 2px solid var(--blue-4);
+  
+}
 
 /* Your regular styles go here */
-
+#JackName {
+  line-height: 200px;
+  width: 385px;
+  color: var(--blue-3);
+}
 /* Media query for screens with a width of 600 pixels or less */
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   /* Adjust styles for smaller screens */
   /* For example, you can set a different width or display property for elements */
+  readMoreBtn1 {
+    display: block;
+  }
+
+  #JackName {
+    padding-left: 50%;
+    color: var(--blue-3);
+    padding-right: 10%;
+    top: 80px;
+    width: 180px;
+    line-height: 50px;
+    font-size: 1.5rem;
+  }
+
   #textbox {
-    background-color: var(--blue-1);
-    color: var(--blue-2);
-    margin-top: 360px;
-    max-width: 100%;
-    max-height: 700px;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 410px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-left: 20%;
-    padding-right: 20%;
-    text-align: right;
-    
-    
-    
-    
-    
+    background-color: var(--blue-1);
+    height: 600px;
+    border: solid 2px var(--blue-2);
 }
+
+
+
 
 .boxProfile {
   position: absolute;
@@ -385,10 +424,12 @@ body {
   background: var(--blue-1);
   border-radius: 175px;
   overflow: hidden;
-  margin-left: calc((100vw - 350px) * 0.5);
-  margin-right: calc((100vw - 350px) * 0.5);
+  margin-left: 0%;
+  margin-right: 0%;
   top: 5px;
   margin-bottom: 15px;
+  left: 5%;
+  
 
 }
   #blackbgStartAbt {
@@ -428,4 +469,8 @@ body {
   position: absolute;
   font-family: 'Oswald', sans-serif;
   font-size: 3.3vh;
+}
+
+#more1 {
+  display: none;
 }
