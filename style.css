@@ -46,6 +46,7 @@
     color: var(--blue-5);
     position: absolute;
     margin: none;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -239,7 +240,7 @@ inset: -20px 0px;
 .contentJu {
   position: absolute;
   inset: 30px;
-  border: 6px solid #84af15;
+  border: 6px solid var(--blue-3);
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
@@ -381,7 +382,8 @@ body {
     padding-right: 25%;
     padding-left: 25%;
     max-height: 700px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     
     
 }
