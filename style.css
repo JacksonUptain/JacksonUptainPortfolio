@@ -3,17 +3,17 @@
 
 
 /* Style the scrollbar */
-:-webkit-scrollbar {
-  width: 0.5px; /* Adjust as needed */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust as needed */
   
 }
 
-:-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color of the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-4); /* Color of the thumb */
    /* Roundness of the thumb */
 }
 
-:-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background-color: transparent; /* Color of the track */
 }
 
@@ -275,13 +275,7 @@ inset: -20px 0px;
  
 }
 
-#JuWriteup {
-  justify-content: center;
-  padding: 5%;
-  font-size: 3.9vh;
-  overflow: hidden;
-  
-}
+
 
 #linewide {
   border-top: 6px solid var(--blue-4);
@@ -316,9 +310,7 @@ inset: -20px 0px;
   margin-right: 14%;
 }
 
-html {
-  width: 100%;
-}
+
 
 body {
   margin: 0px 0px 0px 0px;
@@ -353,15 +345,14 @@ body {
 
 
 #textbox {
-    background-color: var(--blue-2);
+    background-color: var(--blue-1);
     color: linear-gradient(#00ccff, #d400d4);
     margin-top: 5%;
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     padding-right: 20%;
     padding-left: 40%;
-    border-top: 3px solid var(--blue-4);
-    border-bottom:3px solid var(--blue-4);
+    
     
 
 }
