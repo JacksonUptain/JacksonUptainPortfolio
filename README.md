@@ -5,4 +5,4 @@ The website is live at: https://JacksonUptain.github.io/JacksonUptainPortfolio/J
 <br>
 <br>
 <br>
-<img src="JacksonUptain.jpg" alt="Ju Pic">
+<img src="JacksonUptain.jpg" alt="Ju Pic" width="400px">
