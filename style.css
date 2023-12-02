@@ -373,6 +373,7 @@ font-size: 1.3rem;
 #myBtn2:hover {
   color: var(--blue-2);
   border: 2px solid var(--blue-4);
+  cursor: pointer;
   
 }
 
